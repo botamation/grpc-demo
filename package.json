@@ -1,0 +1,14 @@
+{
+  "name": "grpc-demo",
+  "version": "1.0.0",
+  "description": "gRPC client",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.0",
+    "@grpc/proto-loader": "^0.7.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
