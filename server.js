@@ -8,6 +8,11 @@ app.use(express.static('public'));
 const cors = require('cors');
 app.use(cors());
 
+// Serve users.html at the root URL
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'users.html'));
+});
+
 // API Routes
 app.get('/api/users', async (req, res) => {
     try {
